@@ -1,19 +1,16 @@
 package com.example.activity7.database;
-
-import java.io.Serializable;
-
-public class Teman implements  Serializable {
+public class Teman {
     String id;
-    String nama;
-    String telpon;
+    String Nama;
+    String Telepon;
 
     public Teman() {
     }
 
-    public Teman(String id, String nama, String telpon) {
+    public Teman(String id, String nama, String telepon) {
         this.id = id;
-        this.nama = nama;
-        this.telpon = telpon;
+        this.Nama = nama;
+        this.Telepon = telepon;
     }
 
     public String getId() {
@@ -25,18 +22,18 @@ public class Teman implements  Serializable {
     }
 
     public String getNama() {
-        return nama;
+        return Nama;
     }
 
-    public void setNama(String string) {
-        this.nama = nama;
+    public void setNama(String nama) {
+        Nama = nama;
     }
 
-    public String getTelpon() {
-        return telpon;
+    public String getTelepon() {
+        return Telepon;
     }
 
-    public void setTelpon(String telpon) {
-        this.telpon = telpon;
+    public void setTelepon(String telepon) {
+        Telepon = telepon;
     }
 }
